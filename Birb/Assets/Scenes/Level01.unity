@@ -205,7 +205,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 859836843}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.0334, y: 4, z: 0}
+  m_LocalPosition: {x: 0, y: 4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -348,11 +348,6 @@ Transform:
 --- !u!4 &1071172423 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5669355717029219141, guid: b3f1d9a915b40cb4096fff62e2669681, type: 3}
-  m_PrefabInstance: {fileID: 1939981642}
-  m_PrefabAsset: {fileID: 0}
---- !u!198 &1110364777 stripped
-ParticleSystem:
-  m_CorrespondingSourceObject: {fileID: 5669355718145956926, guid: b3f1d9a915b40cb4096fff62e2669681, type: 3}
   m_PrefabInstance: {fileID: 1939981642}
   m_PrefabAsset: {fileID: 0}
 --- !u!1 &1242060056
@@ -592,7 +587,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1468360158}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 13.000001, y: -4, z: 0}
+  m_LocalPosition: {x: 0, y: -4, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1053,10 +1048,6 @@ PrefabInstance:
       propertyPath: m_Name
       value: MonsterPurple
       objectReference: {fileID: 0}
-    - target: {fileID: 5669355717029219145, guid: b3f1d9a915b40cb4096fff62e2669681, type: 3}
-      propertyPath: _particleSystem
-      value: 
-      objectReference: {fileID: 1110364777}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: b3f1d9a915b40cb4096fff62e2669681, type: 3}
 --- !u!1 &1998857840
