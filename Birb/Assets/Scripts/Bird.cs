@@ -10,6 +10,9 @@ public class Bird : MonoBehaviour
     private Vector2 _startPosition;
     Rigidbody2D _rigidbody2D;
     SpriteRenderer _spriteRenderer;
+    bool _resetting;
+
+    public bool IsDragging { get; private set; }
 
     private void Awake()
     {
@@ -26,6 +29,7 @@ public class Bird : MonoBehaviour
     void OnMouseDown()
     {
         _spriteRenderer.color = Color.red;
+        IsDragging = true;
     }
 
     void OnMouseUp()
@@ -37,7 +41,11 @@ public class Bird : MonoBehaviour
         _rigidbody2D.isKinematic = false;
         _rigidbody2D.AddForce(direction * _launchForce);
 
+        var audioSource = GetComponent<AudioSource>();
+        audioSource.Play();
+
         _spriteRenderer.color = Color.white;
+        IsDragging = false;
     }
 
     void OnMouseDrag()
